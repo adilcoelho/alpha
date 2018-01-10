@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ALphaSTORE</title>
+<script  src="scripts/jquery-1.10.1.min.js" type="text/javascript"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	var $menu = $(".menuoption")
+	$menu.hover(function() {
+		$(this).addClass("menuoption_hover");}
+	, function() {
+		$(this).removeClass("menuoption_hover");
+	});
+});</script>
+<div id="body">
+  <div id="alphalogo"><img src="images/ALpha.png"  id="alphalogo"/></div>
+
+  <div id="menu">
+			<div class="menuoption">LANÇAMENTOS</div>
+			<div class="menuoption">PRÉ-VENDA</div>
+			<div class="menuoption">ESTOQUE</div>
+			<div class="menuoption">CONTATO</div>
+</div>
+<div id="estoquediv"> <p>ESTOQUE
+  
+  </p>
+</div>
+<div id="content"></div></div>
+</body>
+</html>
